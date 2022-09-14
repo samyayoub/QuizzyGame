@@ -4,7 +4,7 @@ import WelcomePage from "./WelcomePage"
 
 export default function App()   {
     return(
-        <main>
+        <main className="main-body">
             <WelcomePage />
         </main>
     )
