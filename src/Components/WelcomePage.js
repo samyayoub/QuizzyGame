@@ -1,12 +1,14 @@
 import React from "react"
+import QuestionPage from "./QuestionPage"
 
-export default function WelcomePage()   {
+export default function WelcomePage(props)   {
     function startQuiz()    {
-        console.log("click")    
+        <QuestionPage />
+        props.changeEntryPage()
     }
     
     return(
-        <div className="main-app">
+        <div className="welcome-page">
             <h2>QuizzyGame</h2>
             <p>A Trivia Game</p>
             <button 
