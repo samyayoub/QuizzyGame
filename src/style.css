@@ -10,7 +10,7 @@ body {
 .main-app  {
   background-color: rgb(193, 231, 231);
   width: 750px;
-  height: 550px;
+  height: auto;
   margin: 0 auto;
   padding: 35px;
   margin-top: 35px;
@@ -19,7 +19,7 @@ body {
 
 .welcome-page, .question-page  {
   width: 700px;
-  height: 500px;
+  height: auto;
   padding: 25px;
   text-align: center;
   border: 3px solid rgb(145, 163, 197);
