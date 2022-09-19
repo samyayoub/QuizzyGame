@@ -8,8 +8,8 @@ body {
 }
 
 .main-app  {
-  background-color: rgb(193, 231, 231);
-  width: 750px;
+  background-color: rgb(216, 236, 236);
+  width: 800px;
   height: auto;
   margin: 0 auto;
   padding: 35px;
@@ -18,20 +18,109 @@ body {
 }
 
 .welcome-page, .question-page  {
-  width: 700px;
+  width: 750px;
   height: auto;
+  margin: 0 auto;
   padding: 25px;
   text-align: center;
   border: 3px solid rgb(145, 163, 197);
   border-radius: 25px;
 }
 
-.button {
+h1  {
+  display: block;
+}
+
+.button-start-game {
+  width: 220px;
+  height: 40px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1em;
   background-color: #4D5B9E;
-  color: white;
-  padding: 5px;
-  width: 150px;
   border: 2px solid #818cc5;
-  border-radius: 5px;
+  color: white;
   box-shadow: 3px 5px 5px #999ca8;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  transition: width 1s, letter-spacing 1.5s;
+  transition-timing-function: ease;
+}
+
+/* Welcome page Start button transitions */
+.button-start-game:hover  {
+  width: 40%;
+  letter-spacing: 2px;
+}
+
+.button-start-game:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.button-start-game:active {
+  color: #4D5B9E;
+}
+
+.button-start-game:active:after {
+  background: transparent;
+}
+
+.button-start-game:hover:before {
+  opacity: 1;
+}
+
+.button-start-game:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #4D5B9E;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+/* End Welcome page Start button transitions */
+/* ///////////////////////////////////////// */
+
+.button-answers {
+  width: auto;
+  margin: 0px 15px 5px;
+  padding: 7px 25px 7px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 2px solid #ceae56;
+  color: rgb(0, 0, 0);
+  box-shadow: 3px 5px 5px #a9abb6;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.button-answers:hover,
+  .button-answers:active {
+  letter-spacing: 0.25px;
+}
+
+.bottom-line  {
+  border-top: 1px solid rgb(77, 77, 77);
 }

@@ -9,14 +9,16 @@ export default function WelcomePage(props)   {
     
     return(
         <div className="welcome-page">
-            <h2>QuizzyGame</h2>
+            <h1>QuizzyGame</h1>
             <p>A Trivia Game</p>
-            <button 
-                className="button"
-                onClick={startQuiz}
-                >
-                Start Quiz
-            </button>
+            <div className="wrapper">
+                <button 
+                    className="button-start-game"
+                    onClick={startQuiz}
+                    >
+                    Start Game
+                </button>
+            </div>
         </div>
     )
 }
