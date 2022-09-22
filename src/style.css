@@ -9,7 +9,8 @@ body {
 
 .main-app  {
   background-color: rgb(216, 236, 236);
-  width: 800px;
+  max-width: 800px;
+  width: auto;
   height: auto;
   margin: 0 auto;
   padding: 35px;
@@ -18,7 +19,8 @@ body {
 }
 
 .welcome-page, .question-page  {
-  width: 750px;
+  max-width: 750px;
+  width: auto;
   height: auto;
   margin: 0 auto;
   padding: 25px;
