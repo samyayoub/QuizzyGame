@@ -37,7 +37,12 @@ export default function QuestionCard(props)  {
         <div>
             <h4>
                 {props.question}
-                {props.incorrect_answers}
+                {props.answers?.value}
+                {/* {props.answers?.map((a) => (
+                    <h3>
+                        {a.value}
+                    </h3>
+                ))} */}
             </h4>
             <hr />
         </div>
